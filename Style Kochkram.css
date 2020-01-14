@@ -1,0 +1,20 @@
+/* Was gestylt werden soll kommt vor die geschweifte Klammer. Geschweifte Klammer mit ALTGR und 7 */
+body{
+    background-color: #32a852;
+    margin:0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* Farben können als Wort, RGB Daten oder HEX Zahlen definiert werden */
+header {background-color: white;
+}
+/* Links stylen über a, color ändert farbe, text decoration ist für underline etc zuständig */
+a{color: black; text-decoration: none;}
+/* Bullet points entfernen oder stylen */
+ul{list-style-type: none;
+margin:0; padding:0
+}
+li{font-weight: bolder;text-transform: uppercase;}
+#Doc-Header{
+    background-color: burlywood;
+}
+.rot{background-color: crimson;}
