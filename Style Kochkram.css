@@ -1,6 +1,5 @@
 /* Was gestylt werden soll kommt vor die geschweifte Klammer. Geschweifte Klammer mit ALTGR und 7 */
 body{
-    background-color: #32a852;
     margin:0;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -14,7 +13,19 @@ ul{list-style-type: none;
 margin:0; padding:0
 }
 li{font-weight: bolder;text-transform: uppercase;}
-#Doc-Header{
-    background-color: burlywood;
+/* auf grossem Display verschwindet der Burgerbutton, auf dem kleinen Display unter 800px die navigationsliste*/
+#menu{
+    display: none;
 }
-.rot{background-color: crimson;}
+@media(min-width:800px){
+    #menu{
+        display: block;}
+        #burger{
+            display: none;
+        }
+        /*alle Punkte der Navigationsleiste sollen nebeneinander stehen, mit Abstand von 10pixel*/
+        .unterpunkte{display: flex;}
+        .unterpunkte li{
+            margin: 8px;
+        }
+}
