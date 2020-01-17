@@ -26,7 +26,8 @@
             height="40">
         </button>
         <!-- jetzt kommt der Navigationscontainer für das Burgermenu -->
-        <nav id="menu">
+        <nav id="menu" class="show"> 
+<!-- NAVGATION IST EINE id und zusätzlich eine Klasse Show. Im CSS ist darüber definiert, wann man das Menu sieht/show. -->
             <!-- Im nav container kommt die unsorted list aka menupunkte -->
             <ul class="unterpunkte">
                 <!-- in die unsorted list kommen die Listenpunkte -->
@@ -54,6 +55,59 @@
                     </li>
             </ul>
         </nav>
-       </header> 
+       </header> <!-- Der HEADER endet hier -->
+       
+       <main class="content">
+           <section id="intro">
+               <div class="intro-text">
+                   <h1>
+                        Die besten Rezepte für Webworker
+                   </h1>
+                        <p>
+                        Es gibt mehr als Pizza & Ravioli
+                        </p>
+                        <a href="#" class="button"> 
+                        Entdecke die Leckereien
+                        </a>
+               </div>
+
+           </section>
+           <section id="rezepte">
+            <h2>
+                Die neuesten Rezepte
+            </h2>
+<!-- Jetzt kommt die ganze div box als row für die Oberkarte -->
+            <div class="row">
+<!-- Jetzt kommt eine div Box für jede Rezeptkarte -->
+                <div class="card">
+<!-- Wir wollen, dass der user auch auf den Rezepttext kommt, egal ob er aufs Bild, Header oder Text klickt. Also muss alles (Text, IMG, H3) einzeln mit a href verlinkt werden -->
+<!-- Ein Bild kann nur inside von einem a link verlinkt werden, nicht andersrum! -->
+                    <a href="#">
+                        <img src="img/toast-mit-ei.jpg" alt="Toast mit Ei">
+                    </a>
+<!-- Inside H3 Überschrift ist auch ein Link. Der Text der Überschrift muss im a href stehen, nicht in der H3 -->
+                    <h3>
+                        <a href="#">
+                            Toast mit Ei Überschrift
+                        </a>
+                        
+                    </h3>
+<!-- Wenn man auf den Text klickt, soll es auch zum Link gehen, also gleiches Schema wie bei H3. -->
+                    <p>
+                        <a href="#">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt laudantium dolore corporis perspiciatis ea eum magnam impedit debitis! Beatae ducimus ipsa corrupti odio esse tenetur impedit molestias repellendus quos.
+                        </a>
+                    </p>
+                <a href="#" class="button">
+                    Hier gehts zum Rezept
+                </a>
+
+                </div>
+
+            </div>
+           </section> 
+       </main>
+       
+       <script src="js/menu.js"></script>
     </body>
 </html>

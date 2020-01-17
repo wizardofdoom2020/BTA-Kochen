@@ -1,31 +1,98 @@
 /* Was gestylt werden soll kommt vor die geschweifte Klammer. Geschweifte Klammer mit ALTGR und 7 */
-body{
-    margin:0;
-    font-family: Helvetica, Arial, sans-serif;
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 /* Farben können als Wort, RGB Daten oder HEX Zahlen definiert werden */
-header {background-color: white;
+/* display flex rückt nach rechts/nebeneinander. align und justify spacen auseinander. padding macht Innenabstand zwischen header und body. 1rem padding sind 16px*/
+header {
+  background-color: white;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-right: 1rem;
+}
+/* Styling vom Burgermenu Button: Ohne Rahmen und weiss wie der Hintergrund*/
+#burger {
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
 /* Links stylen über a, color ändert farbe, text decoration ist für underline etc zuständig */
-a{color: black; text-decoration: none;}
+a {
+  color: black;
+  text-decoration: none;
+}
 /* Bullet points entfernen oder stylen */
-ul{list-style-type: none;
-margin:0; padding:0
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-li{font-weight: bolder;text-transform: uppercase;}
+li {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
 /* auf grossem Display verschwindet der Burgerbutton, auf dem kleinen Display unter 800px die navigationsliste*/
-#menu{
-    display: none;
+#menu {
+  display: none;
 }
-@media(min-width:800px){
-    #menu{
-        display: block;}
-        #burger{
-            display: none;
-        }
-        /*alle Punkte der Navigationsleiste sollen nebeneinander stehen, mit Abstand von 10pixel*/
-        .unterpunkte{display: flex;}
-        .unterpunkte li{
-            margin: 8px;
-        }
+/* das Menu wird nur angezeigt, wenn der Button für Menu gedrückt wird.Die Funktion dazu steht im Java*/
+#menu.show {
+  display: block;
+}
+/* background image hochladen und an viewport höhe/gerät anpassen, zentrieren*/
+/* text mittig und zentriert via display flex*/
+#intro {
+  background-image: url(img/intro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-text {
+  color: white;
+  text-align: center;
+}
+/*wir stylen den Button*/
+.button {
+  background-color: white;
+  color: #374a67;
+  padding: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 6px 0px rgba(46, 74, 117, 0.5);
+  border: 2px solid #374a67;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin-top: 1rem;
+  display: inline-block;
+}
+/* wir stylen die cards*/
+.card {
+  border: 1px solid light lightgrey;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  #menu {
+    display: block;
+  }
+  #burger {
+    display: none;
+  }
+  /*alle Punkte der Navigationsleiste sollen nebeneinander stehen, mit Abstand von 10pixel*/
+  .unterpunkte {
+    display: flex;
+  }
+  .unterpunkte li {
+    margin: 8px;
+  }
 }
