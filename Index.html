@@ -10,10 +10,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Vor dem Ende des head wird das CSS stylesheet verknüpft -->
         <link rel="stylesheet" href="Style Kochkram.css">
+        <!-- und noch ein steylesheet für ein paar social media icons-->
+        <link rel="stylesheet" href="fonts/icons.css">
     </head>
     <body>
         <!-- Das ist der Header vom Body, da kommt das Logo und die Navigation rein -->
-       <header id=Doc-Header>
+       <header id=doc-header>
            <!-- a ist das Element für einen Hyperlink -->
            <a href="Index.html">
                 <img src="img/logo.png" alt="Logo Kochkram Kochmütze und Brille"
@@ -66,7 +68,7 @@
                         <p>
                         Es gibt mehr als Pizza & Ravioli
                         </p>
-                        <a href="#" class="button"> 
+                        <a href="#rezepte" class="button"> 
                         Entdecke die Leckereien
                         </a>
                </div>
@@ -88,7 +90,7 @@
 <!-- Inside H3 Überschrift ist auch ein Link. Der Text der Überschrift muss im a href stehen, nicht in der H3 -->
                     <h3>
                         <a href="#">
-                            Toast mit Ei Überschrift
+                            Toast mit Ei 
                         </a>
                         
                     </h3>
@@ -98,16 +100,141 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt laudantium dolore corporis perspiciatis ea eum magnam impedit debitis! Beatae ducimus ipsa corrupti odio esse tenetur impedit molestias repellendus quos.
                         </a>
                     </p>
-                <a href="#" class="button">
+<!--Dieser Button hat die Klasse Blau und alle Eigenschaften der allgemeinen Klasse button (also 2 Klassen)-->
+                <a href="#" class="button button-blue">
                     Hier gehts zum Rezept
                 </a>
 
                 </div>
+<!--2.karte-->
+<div class="card">
+    <!-- Wir wollen, dass der user auch auf den Rezepttext kommt, egal ob er aufs Bild, Header oder Text klickt. Also muss alles (Text, IMG, H3) einzeln mit a href verlinkt werden -->
+    <!-- Ein Bild kann nur inside von einem a link verlinkt werden, nicht andersrum! -->
+                        <a href="#">
+                            <img src="img/burger.jpg" alt="Burger">
+                        </a>
+    <!-- Inside H3 Überschrift ist auch ein Link. Der Text der Überschrift muss im a href stehen, nicht in der H3 -->
+                        <h3>
+                            <a href="#">
+                                Burger 
+                            </a>
+                            
+                        </h3>
+    <!-- Wenn man auf den Text klickt, soll es auch zum Link gehen, also gleiches Schema wie bei H3. -->
+                        <p>
+                            <a href="#">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt laudantium dolore corporis perspiciatis ea eum magnam impedit debitis! Beatae ducimus ipsa corrupti odio esse tenetur impedit molestias repellendus quos.
+                            </a>
+                        </p>
+    <!--Dieser Button hat die Klasse Blau und alle Eigenschaften der allgemeinen Klasse button (also 2 Klassen)-->
+                    <a href="#" class="button button-blue">
+                        Hier gehts zum Rezept
+                    </a>
+    
+                    </div>
+<!--3. rezeptkarte-->
+<div class="card">
+    <!-- Wir wollen, dass der user auch auf den Rezepttext kommt, egal ob er aufs Bild, Header oder Text klickt. Also muss alles (Text, IMG, H3) einzeln mit a href verlinkt werden -->
+    <!-- Ein Bild kann nur inside von einem a link verlinkt werden, nicht andersrum! -->
+                        <a href="#">
+                            <img src="img/pancakes.jpg" alt="Pancakes">
+                        </a>
+    <!-- Inside H3 Überschrift ist auch ein Link. Der Text der Überschrift muss im a href stehen, nicht in der H3 -->
+                        <h3>
+                            <a href="#">
+                                Pancakes 
+                            </a>
+                            
+                        </h3>
+    <!-- Wenn man auf den Text klickt, soll es auch zum Link gehen, also gleiches Schema wie bei H3. -->
+                        <p>
+                            <a href="#">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt laudantium dolore corporis perspiciatis ea eum magnam impedit debitis! Beatae ducimus ipsa corrupti odio esse tenetur impedit molestias repellendus quos.
+                            </a>
+                        </p>
+    <!--Dieser Button hat die Klasse Blau und alle Eigenschaften der allgemeinen Klasse button (also 2 Klassen)-->
+                    <a href="#" class="button button-blue">
+                        Hier gehts zum Rezept
+                    </a>
+    
+                    </div>
+<!-- die 4. Rezeptkarte-->
+<div class="card">
+    <!-- Wir wollen, dass der user auch auf den Rezepttext kommt, egal ob er aufs Bild, Header oder Text klickt. Also muss alles (Text, IMG, H3) einzeln mit a href verlinkt werden -->
+    <!-- Ein Bild kann nur inside von einem a link verlinkt werden, nicht andersrum! -->
+                        <a href="#">
+                            <img src="img/kuerbissuppe.jpg" alt="Kürbissuppe">
+                        </a>
+    <!-- Inside H3 Überschrift ist auch ein Link. Der Text der Überschrift muss im a href stehen, nicht in der H3 -->
+                        <h3>
+                            <a href="#">
+                                Kürbissuppe 
+                            </a>
+                            
+                        </h3>
+    <!-- Wenn man auf den Text klickt, soll es auch zum Link gehen, also gleiches Schema wie bei H3. -->
+                        <p>
+                            <a href="#">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt laudantium dolore corporis perspiciatis ea eum magnam impedit debitis! Beatae ducimus ipsa corrupti odio esse tenetur impedit molestias repellendus quos.
+                            </a>
+                        </p>
+    <!--Dieser Button hat die Klasse Blau und alle Eigenschaften der allgemeinen Klasse button (also 2 Klassen)-->
+                    <a href="#" class="button button-blue">
+                        Hier gehts zum Rezept
+                    </a>
+    
+                    </div>
 
             </div>
            </section> 
        </main>
-       
+<!-- Hier gibt das Nebenelement/unterer Teil der Seite -->
+       <aside id="newsletter">
+           <div>
+               <p>
+                   Kein Rezept mehr verpassen
+                   <br>
+                   Hol dir unseren Newsletter
+               </p>
+<!-- Jetzt kommt das Formular zum Eingeben der Email für den Newsletter-->
+               <form action="" method="POST">
+                   <input type="email" name="email" placeholder="Deine Emailadresse">
+<!--Der Abonnieren Button soll wieder so aussehen, wie der obere weisse Button. Deshalb bekommt er die gleich class "button".-->
+                   <button class="button" type="submit">Abonnieren</button>
+               </form>
+           </div>
+
+       </aside>
+       <footer id="doc-footer">
+        <nav id="rechtliches">
+            <ul class="interne-links">
+                <li>
+                    <a href="#"> Impressum</a>
+                </li>
+                <li>
+                    <a href="#">Datenschutz</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <nav id="social">
+            <ul class="externe-links">
+<!-- wir binden die Icons für die social media kanäle via class separat ein. Das stylesheet mit dem Font für die icons ist oben im Head eingebunden.-->
+                <li class="icon-facebook">
+                    <a href="https://www.facebook.com" target="blank"></a>
+                </li>
+                <li class="icon-instagram">
+                    <a href="https://www.instagram.com" target="blank"></a>
+                </li>
+                <li class="icon-youtube">
+                    <a href="https://www.youtube.com" target="blank"></a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
        <script src="js/menu.js"></script>
+
     </body>
 </html>
