@@ -31,6 +31,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+#rechtliches ul{
+  text-align: center;
+  text-transform: capitalize;
+}
 li {
   font-weight: bolder;
   text-transform: uppercase;
@@ -112,6 +116,45 @@ li {
   text-align: center;
 }
 
+/* um das Impressum etc. soll noch weisser Space.*/
+#rechtliches li{
+  margin: 1rem;
+}
+#newsletter{
+  background-color:#04122b;
+  color: white;
+  display: inline block;
+  text-align: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+input{
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px 0px rgba(46, 74, 117, 0.5);
+  border: 2px solid #374a67;
+}
+/* wir stylen den footer inklusive der links*/
+
+.interne-links{
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.externe-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  font-size: 2rem;
+}
+/* um jedes Social Icon soll etwas padding/Platz zwischen den icons. also muss man die class li ansprechen. entweder als Gruppe zusammen via #social li{ oder separat. */
+.icon-facebook, .icon-instagram, .icon-youtube{
+  margin: 1rem;
+}
+
+#doc-footer{
+  padding: 3rem 1rem;
+}
 @media (min-width: 800px) {
   #menu {
     display: block;
@@ -129,38 +172,18 @@ li {
 /* alle 4 Rezeptkarten sollen nur auf dem grossen Bildschirm nebeneinander stehen.man muss also den "Papa" von allen 4 cards ansprechen. besitzer der cards ist die row. Also flexen bei class row anwenden bei einem media query mit mindest Bildschirm von 800 pixel*/
   .row{
     display: flex;}
-}
-#newsletter{
-  background-color:#04122b;
-  color: white;
-  display: inline block;
-  text-align: center;
-  padding: 2rem 1rem 2rem 1rem;
+/* das Impressum etc. soll auf dem handy untereinander stehen, auf dem grossen display nebenbeinander. deshalb muss das display flex in den media query.*/
+  .interne-links{
+    display: flex;
+  }
+
+  #doc-footer{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-input{
-  padding: 1rem;
-  border-radius: 4px;
-  box-shadow: 0px 4px 6px 0px rgba(46, 74, 117, 0.5);
-  border: 2px solid #374a67;
-}
-#doc-footer{
-  display: flex;
-  justify-content: space-between;
-}
-.interne-links{
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  margin: 3rem;
-}
 
-.externe-links{
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  margin: 3rem;
-}
 
 
 
